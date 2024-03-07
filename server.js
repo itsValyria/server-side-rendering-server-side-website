@@ -7,14 +7,6 @@ import fetchJson from './helpers/fetch-json.js'
 const allData_advertisements = await fetchJson('https://fdnd-agency.directus.app/items/dh_services')
 let all_advertisements_data = allData_advertisements.data;
 
-
-
-// Stel het basis endpoint in
-const apiUrl = 'https://fdnd.directus.app/items'
-
-// Haal alle squads uit de WHOIS API op
-const squadData = await fetchJson(apiUrl + '/squad')
-
 // Maak een nieuwe express app aan
 const app = express()
 app.use(express.json());
@@ -31,39 +23,13 @@ app.use(express.static('public'))
 
 // Maak een GET route voor de index
 app.get('/', function (request, response) {
-  // Haal alle personen uit de WHOIS API op
-  fetchJson(apiUrl + '/person').then((apiData) => {
-    // apiData bevat gegevens van alle personen uit alle squads
-    // Je zou dat hier kunnen filteren, sorteren, of zelfs aanpassen, voordat je het doorgeeft aan de view
-
-    // Render index.ejs uit de views map en geef de opgehaalde data mee als variabele, genaamd persons
-    response.render('index', {services: all_advertisements_data, squads: squadData.data})
-  })
+  response.render('index', {services: all_advertisements_data})
 })
 
 // Maak een POST route voor de index
 app.post('/', function (request, response) {
   // Er is nog geen afhandeling van POST, redirect naar GET op /
   response.redirect(303, '/')
-})
-
-const messagess = [];
-
-// Maak een GET route voor een detailpagina met een request parameter id
-app.get('/person/:id', function (request, response) {
-  // Gebruik de request parameter id en haal de juiste persoon uit de WHOIS API op
-  fetchJson('https://fdnd.directus.app/items/person/' + request.params.id).then((apiData) => {
-    // Render person.ejs uit de views map en geef de opgehaalde data mee als variable, genaamd person
-    response.render('person', {person: apiData.data, squads: squadData.data, messages: messagess  } )
-  })
-})
-
-// Maak een POST route voor de detail
-app.post('/person/:id', function (request, response) {
-  // Er is nog geen afhandeling van POST, redirect naar GET op /
-  messagess.push(request.body.textbox)
-  response.redirect(303, '/person/' + request.params.id)
-
 })
 
 // Stel het poortnummer in waar express op moet gaan luisteren
@@ -74,6 +40,3 @@ app.listen(app.get('port'), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
-
-// const allData_advertisements = await fetchJson('https://fdnd-agency.directus.app/items/dh_services')
-// let all_advertisements_data = allData_advertisements.data;
