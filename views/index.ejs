@@ -1,0 +1,16 @@
+<!-- Hier word de header geinclude -->
+<%- include('./partials/head') %>
+
+<!-- Dit is de content -->
+<nav></nav>
+<main>
+  <ul>
+    <% services.forEach(function(service) { %>
+       <li><%= service.title %></li>
+    <% }); %> 
+   </ul>
+</main>
+<footer></footer>
+
+<!-- Hier word de foot geinclude -->
+<%- include('./partials/foot') %>
