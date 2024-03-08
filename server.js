@@ -4,6 +4,7 @@ import express from 'express'
 // Importeer de zelfgemaakte functie fetchJson uit de ./helpers map
 import fetchJson from './helpers/fetch-json.js'
 
+// Fetch de data van de FDND Agency API
 const allData_advertisements = await fetchJson('https://fdnd-agency.directus.app/items/dh_services')
 let all_advertisements_data = allData_advertisements.data;
 
