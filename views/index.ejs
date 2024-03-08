@@ -5,8 +5,9 @@
 <main>
   <ul>
     <% services.forEach(function(service) { %>
-       <li><%= service.title %></li>
-       <a href="/service/<%= service.id %>">Initiatief 1</a>
+       <li>
+          <a href="/service/<%= service.id %>"><%= service.title %></a>
+      </li>
     <% }); %> 
    </ul>
 </main>
