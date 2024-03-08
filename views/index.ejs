@@ -2,15 +2,14 @@
 <%- include('./partials/head') %>
 
 <!-- Dit is de content -->
-<nav></nav>
 <main>
   <ul>
     <% services.forEach(function(service) { %>
        <li><%= service.title %></li>
+       <a href="/service/<%= service.id %>">Initiatief 1</a>
     <% }); %> 
    </ul>
 </main>
-<footer></footer>
 
 <!-- Hier word de foot geinclude -->
 <%- include('./partials/foot') %>
