@@ -18,7 +18,7 @@
   --base--black: #202020;
 
   --primary--green-accent: #41bd66;
-  --secondary--green-accent: #F2F8ED;
+  --secondary--green-accent: #e3ebdd;
 }
 
 /* ------------- Elements ------------- */
@@ -42,6 +42,7 @@ ul, li, a {
   padding: 0;
   color: unset;
   text-decoration: none;
+  list-style-type: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -121,8 +122,7 @@ header {
 }
 
 .main__article {
-  width: 90vw;
-  margin: 0 auto;
+  padding: 1em;
 }
 
 .main__article a {
@@ -134,7 +134,6 @@ header {
 .green {
   background-color: var(--primary--green-accent);
   color: var(--base--white);
-  width: 100vw;
   padding: 4em 0;
 }
 

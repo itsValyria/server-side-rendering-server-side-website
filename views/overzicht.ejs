@@ -1,0 +1,23 @@
+<!-- Hier word de header geinclude -->
+<%- include('./partials/head') %>
+
+<main>
+
+  <ul>
+    <% services.forEach(function(service) { %>
+       <li class="overzicht__service">
+          <a href="/service/<%= service.id %>">
+            <img src="assets/background.jpg">
+            <section class="overzicht__service--tekst">
+              <h2><%= service.title %></h2>
+              <p><%= service.short_description %></p>
+            </section>
+          </a>
+      </li>
+    <% }); %> 
+  </ul>
+
+</main>
+
+<!-- Hier word de foot geinclude -->
+<%- include('./partials/foot') %>
