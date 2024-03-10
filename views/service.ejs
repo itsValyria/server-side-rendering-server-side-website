@@ -1,8 +1,37 @@
 <!-- Hier word de header geinclude -->
 <%- include('./partials/head') %>
 
-<main>
-    
+<main class="service__container">
+  <h2><%= service.title %></h2>
+  <p class="service__categories"><%= service.type %> | <%= service.categories %></p>
+  <%- service.long_description %>
+  <a href="#">Neem contact op ➜</a>
+
+  <!-- <ul>
+    <li>
+      <img src="/assets/calendar.svg" alt="">
+      <p><%= service.start_date %><%= service.end_date %></p>
+    </li>
+    <li>
+      <img src="/assets/time.svg" alt="">
+      <p><%= service.start_time %><%= service.end_time %></p>
+    </li>
+    <li>
+      <img src="/assets/location.svg" alt="">
+      <p><%= service.location %></p>
+    </li>
+  </ul> -->
+
+  <img class="service__image" src="/assets/background.jpg" alt="">
+
+  <section class="service__contactinfo">
+    <img src="/assets/placeholder.png" alt="">
+    <ul>
+      <li>Jane Doe</li>
+      <li>020 123 45 67</li>
+      <li>info@voorbeeld.nl</li>
+    </ul>
+  </section>
 </main>
 
 <!-- Hier word de foot geinclude -->

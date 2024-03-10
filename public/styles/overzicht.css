@@ -28,3 +28,7 @@
 .overzicht__service--tekst {
   padding: 1em;
 }
+
+.overzicht__service--tekst h2 {
+  margin-top: 0;
+}
