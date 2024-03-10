@@ -32,3 +32,18 @@
 .overzicht__service--tekst h2 {
   margin-top: 0;
 }
+
+/* ------------- Media Queries ------------- */
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+
+}
+
+@media screen and (min-width: 1600px) {
+
+}
