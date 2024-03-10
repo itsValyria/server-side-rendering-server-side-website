@@ -37,13 +37,58 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .overzicht__container {
+    width: 80vw;
+    margin: 0 auto;
+  }
 
+  .overzicht__service {
+    width: 34em;
+  }
+
+  .overzicht__service img {
+    width: 34em;
+    height: 16em;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
+  .overzicht__container {
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+  }
+  
+  .overzicht__service {
+    width: 30em;
+  }
 
+  .overzicht__service img {
+    width: 30em;
+    height: 16em;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 1600px) {
+  .overzicht__container {
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em 5em;
+  }
+  
+  .overzicht__service {
+    width: 24em;
+  }
 
+  .overzicht__service img {
+    width: 24em;
+    height: 16em;
+    object-fit: cover;
+  }
 }
