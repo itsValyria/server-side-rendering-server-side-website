@@ -68,7 +68,7 @@
 
   .overzicht__service img {
     max-width: 24em;
-    max-height: 16em;
+    height: 16em;
     object-fit: cover;
   }
 }
@@ -88,7 +88,7 @@
 
   .overzicht__service img {
     max-width: 22em;
-    max-height: 16em;
+    height: 16em;
     object-fit: cover; 
   }
 }
