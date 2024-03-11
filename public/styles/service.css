@@ -65,6 +65,13 @@
   height: 5em;
 }
 
+.service__contactinfo--left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
 /* ------------- Main ------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
