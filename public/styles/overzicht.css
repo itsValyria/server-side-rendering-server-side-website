@@ -63,32 +63,32 @@
   }
   
   .overzicht__service {
-    width: 30em;
+    max-width: 24em;
   }
 
   .overzicht__service img {
-    width: 30em;
-    height: 16em;
+    max-width: 24em;
+    max-height: 16em;
     object-fit: cover;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .overzicht__container {
-    width: 70vw;
     margin: 0 auto;
     display: grid;
+    gap: 1em 4em;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em 5em;
+    width: 70vw;
   }
   
   .overzicht__service {
-    width: 24em;
+    width: 22em;
   }
 
   .overzicht__service img {
-    width: 24em;
-    height: 16em;
-    object-fit: cover;
+    max-width: 22em;
+    max-height: 16em;
+    object-fit: cover; 
   }
 }
