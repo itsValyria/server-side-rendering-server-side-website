@@ -77,7 +77,7 @@
   .overzicht__container {
     margin: 0 auto;
     display: grid;
-    gap: 1em 4em;
+    gap: 8em;
     grid-template-columns: 1fr 1fr 1fr;
     width: 70vw;
   }

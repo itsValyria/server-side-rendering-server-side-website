@@ -290,6 +290,10 @@ footer h4 {
     transition: 0.4s;
   }
 
+  .header__nav a:nth-of-type(3) {
+    padding-right: 0;
+  }
+
   footer {
     display: flex;
     flex-direction: row;
