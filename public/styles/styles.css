@@ -249,11 +249,6 @@ footer h4 {
   .green {
     width: 100vw;
     padding: 4em 4em;
-
-  }
-
-  .green h2 {
-
   }
 
   footer {
@@ -304,6 +299,34 @@ footer h4 {
 
   .header__nav a:nth-of-type(3) {
     padding-right: 0;
+  }
+
+  .main__article {
+    width: 50vw;
+  }
+
+  .main__article p {
+    max-width: 30em;
+  }
+
+  .white {
+    margin: 0 auto;
+    padding: 2em 0;
+    padding-left: 24em;
+  }
+
+  .lightgreen {
+    background-color: var(--secondary--green-accent);
+    padding: 2em 4em;
+  }
+
+  .green {
+    padding: 4em 4em;
+  }
+
+  .main__article--container {
+    display: flex;
+    justify-content: space-around;
   }
 
   footer {
