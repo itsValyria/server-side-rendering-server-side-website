@@ -231,17 +231,29 @@ footer h4 {
   .main__hero-title {
     font-size: 3em;
   }
+
+  .main__article {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .main__article h2 {
+    font-size: 2em;
+  }
   
-  .main__description h3 {
-    font-size: 1.6em;
+  .main__article p {
+    max-width: 30em;
+    font-size: 1.4em;
   }
 
-  .main__description p {
-    font-size: 1.2em;
+  .green {
+    width: 100vw;
+    padding: 4em 4em;
+
   }
 
-  .main__info {
-    font-size: 1.2em;
+  .green h2 {
+
   }
 
   footer {
