@@ -18,6 +18,8 @@ De Buurtcampus is een platform waar vraag en aanbod in Amsterdam West samen komt
 <!-- Voeg een link toe naar Github Pages 🌐-->
 De Buurtcampus is een project voor een letterlijke buurt campus waar vraag en aanbod elkaar kruist. Het is een initiatief om mensen in de buurt met elkaar te verbinden. Vrijwilligers gezocht, zoek jij die ene toffe muzikant voor op je buurtfeestje of organiseer je een theekransje voor ouderen? Alles is welkom!
 
+![Untitled_Artwork 3](https://github.com/itsValyria/server-side-rendering-server-side-website/assets/76444716/5661d230-cdb9-47a5-8f7b-778539fcf1f8)
+
 ## Gebruik
 <!--Bij Gebruik staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 
