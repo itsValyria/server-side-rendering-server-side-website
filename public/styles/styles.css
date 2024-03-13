@@ -301,6 +301,14 @@ footer h4 {
     padding-right: 0;
   }
 
+  .main__hero {
+    min-height: 20em;
+  }
+
+  .main__hero-title {
+    font-size: 4em;
+  }
+
   .main__article {
     width: 50vw;
   }
@@ -318,11 +326,11 @@ footer h4 {
 
   .lightgreen {
     background-color: var(--secondary--green-accent);
-    padding: 6em 4em;
+    padding: 2em 4em;
   }
 
   .green {
-    padding: 8em 4em;
+    padding: 4em 4em;
   }
 
   .main__article--container {
